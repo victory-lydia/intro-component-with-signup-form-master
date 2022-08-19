@@ -1,0 +1,92 @@
+:root {
+    --desktop-bg: hsl(0, 100%, 74%);
+    --alert-box:  hsl(248, 32%, 49%);
+    --border-color:  hsl(246, 25%, 77%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,900&family=Poppins:wght@400;600&family=Rajdhani:wght@300&display=swap');
+
+*{
+    padding :0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins", sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--desktop-bg);
+    background-image: url(../images/bg-intro-desktop.png);
+    background-size: 100%;
+    display: flex;
+    padding: 5rem;
+}
+
+.sub{
+    width: 50%;
+    height: 100%;
+}
+.left{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center; 
+    color: white;
+   
+}
+
+.left h1{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 0.5em;
+}
+
+.left p{
+    width: 80%;
+}
+
+.right{
+ display: flex;
+ align-items: center;
+}
+
+.right .alert-box{
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 8px;
+    color: #fff;
+    background-color:var(--alert-box); 
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+
+.right form{
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.right input{
+    border: 1px solid var(--border-color);
+    outline: none;
+    padding: 1em;
+    border-radius: 5px ;
+}
+
+form button{
+    width: 100%;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+}
